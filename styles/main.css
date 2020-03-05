@@ -1,0 +1,161 @@
+/* general style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+
+
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left,
+#lezioni .row > .right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row > .left,
+#steps .row > .central,
+#steps .row > .right{
+  float: left;
+  width: 33%;
+}
+
+#steps{
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+/* COMMON */
+
+.container.grey{
+  background-color: #f9f9f9;
+}
+
+img{
+  height: 200px;
+}
+
+.clear {
+  clear:both;
+}
+
+
+/* Responsive */
+/* <420px */
+@media screen and (max-width: 419px) {
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right,
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    float: none;
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+
+  .row h1 {
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+ #lezioni .row .right img {
+   width: 100%;
+   height: auto;
+ }
+}
+
+/* <420px 768px> */
+@media screen and (min-width: 420px) and (max-width:768px) {
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    float: none;
+    margin: auto;
+    padding: 20px 0;
+    width: 70%;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    float: none;
+    margin: auto;
+    padding: 0 15px 0 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .row h1 {
+    padding-top: 20px;
+  }
+
+  .row {
+    width: 100%;
+    padding: 0 0 20px 0;
+    border-radius: 20px;
+    background: #929D9E;
+    box-shadow: 0 5px #eaf0f6;
+    color: #F3E367;
+  }
+
+  #lezioni .right img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+  .container.grey {
+    background: none;
+  }
+
+  #why hr {
+    border: 1px solid #F3E367;
+  }
+}
