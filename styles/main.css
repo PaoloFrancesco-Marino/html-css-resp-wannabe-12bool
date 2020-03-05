@@ -7,10 +7,22 @@
 
 body {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* utilites */
 
 .section-margin {
   margin: 50px 0;
+}
+
+.grey {
+  background: #f9f9f9;
+  border-radius: 25px;
+}
+
+.padding-box {
+  padding: 20px;
 }
 
 .section-margin h1,
@@ -25,14 +37,23 @@ img {
   max-width: 100%;
 }
 
-
-.grey {
-  background: #f9f9f9;
+.container p {
+  max-width: 70%;
+  margin: auto;
 }
 
-/*  */
+.border {
+  border-bottom: 2px solid #ccc;
+}
+
+/* bottom */
+
 #bg-blu img {
   background-color:#428bca;
   border-radius:50%;
+  padding: 20px;
+}
+
+.padding-box {
   padding: 20px;
 }
